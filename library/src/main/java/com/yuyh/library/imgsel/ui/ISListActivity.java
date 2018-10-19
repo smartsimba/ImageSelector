@@ -134,7 +134,9 @@ public class ISListActivity extends AppCompatActivity implements View.OnClickLis
             btnConfirm.setTextColor(config.btnTextColor);
 
             if (config.multiSelect) {
-                if (null != config.selectedList) {
+                if (null == config.selectedList) {
+                    Constant.imageList.clear();
+                } else {
                     Constant.imageList = config.selectedList;
                 }
                 btnConfirm.setText(String.format(getString(R.string.confirm_format), config.btnText, Constant.imageList.size(), config.maxNum));
