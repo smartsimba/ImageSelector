@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "2.0.6" // 版本号
+version = "1.0.1" // 版本号
 
 android {
     compileSdkVersion 27
@@ -33,7 +33,7 @@ dependencies {
 
 def siteUrl = 'https://github.com/smuyyh/ImageSelector'
 def gitUrl = 'https://github.com/smuyyh/ImageSelector.git'
-group = "com.yuyh.imgsel"
+group='com.github.smartsimba'
 
 install {
     repositories.mavenInstaller {
@@ -50,9 +50,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'smuyyh'
-                        name 'smuyyh'
-                        email 'smuyyh@gmail.com'
+                        id 'smartsimba'
+                        name 'smartsimba'
+                        email 'smartsimba1990@gmail.com'
                     }
                 }
                 scm {
